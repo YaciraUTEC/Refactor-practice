@@ -29,6 +29,22 @@
 
 - Método determinar_ganador que combina los pasos para determinar el ganador de manera más limpia.
 
+-----------------------------------------------------------------------
+### EVALUACIÓN DEL CODIGO RESULTANTE
+**Uso de Clases y Métodos**
 
+Se han utilizado *clases* (Votacion y CalculaGanador) para organizar la lógica relacionada con la votación y el cálculo del ganador. Esto facilita la reutilización del código y lo hace más modular.
+Métodos Bien Definidos:
+
+Los *métodos*:
+es_din_valido, contar_votos_validos, calcular_porcentaje_votos y determinar_ganador están bien definidos y separan claramente las responsabilidades dentro de la clase CalculaGanador. Esto mejora la legibilidad y la mantenibilidad del código.
+
+**Manejo de Archivos CSV:**
+
+El método leer_datos en la clase Votacion maneja la lectura de datos desde un archivo CSV, omitiendo la primera línea (probablemente el encabezado), lo cual es un buen enfoque para evitar procesar datos no deseados.  
+
+**Uso de defaultdict:**
+
+El uso de defaultdict(int) para self.votos_por_candidato en CalculaGanador es apropiado, ya que simplifica el conteo de votos por candidato al manejar automáticamente las claves que no existen.
 
 
