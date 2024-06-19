@@ -48,4 +48,10 @@ El método leer_datos en la clase Votacion maneja la lectura de datos desde un a
 
 El uso de defaultdict(int) para self.votos_por_candidato en CalculaGanador es apropiado, ya que simplifica el conteo de votos por candidato al manejar automáticamente las claves que no existen.
 
+**Eficiencia y Rendimiento**
+
+Las operaciones de conteo y cálculo de porcentajes están optimizadas mediante el uso de defaultdict y bucles eficientes.
+
+
+
 
